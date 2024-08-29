@@ -1,4 +1,8 @@
-resume_Santiago_Miro.tex
+*.tex
+*.aux
+*.log
+*.out
+*.pdf
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
