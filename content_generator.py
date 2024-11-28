@@ -5,16 +5,11 @@ API_KEY = os.getenv('OPENAI_API_KEY')
 
 def rewrite_job_description(job_requirements):
     prompt = f'''The current user experience consists on these five bullet points:
-                    1. Led the design and optimization of trigger software for the P-ONE detector, 
-                    boosting detection capabilities by 25% and improving system precision.
-                    2. Leveraged Python and SQL to streamline data processing workflows, 
-                    reducing processing time by 40% and achieving a notable 90% efficiency rate.
-                    3. Coordinated and communicated technical advancements to international stakeholders, 
-                    resulting in a 30% increase in collaborative initiatives.
-                    4. Harnessed machine learning and advanced statistical models to validate experimental data, 
-                    achieving 95% accuracy in results.
-                    5. Directed a data visualization project, 
-                    reducing stakeholder decision-making time by 50% through effective transformation of complex datasets.
+                    1. Led the design and implementation of a Retrieval-Augmented Generation (RAG) model to enhance document interpretation and response generation at scale.
+                    2. Developed and deployed deep learning models (LSTM, Transformer), achieving a 15% improvement in prediction accuracy for faster decision-making.
+                    3. Optimized pre-trained LLMs for complex text analysis and RAG response generation, enhancing keyword detection and response accuracy.
+                    4. Leveraged AWS services (EC2, S3, Lambda) for scalable, reliable model deployment, ensuring 99.9% uptime and efficient handling of large datasets.
+                    5. Implemented end-to-end MLOps CI/CD pipelines using Jenkins and Docker, reducing model update times by 30%.
                 The user will provide the requirements of a new job opportunity.
                 You will have to rewrite the five user experience bullet points so that they match the requirements of the job opportunity.
                 Most importantly the bullets should begin with a verb and contain a measurable quantity.
